@@ -1,0 +1,112 @@
+/* Signup.css */
+
+body {
+  background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+.signup-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-form {
+  background: #fff;
+  padding: 2.5rem 2rem;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+  width: 100%;
+  max-width: 370px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.signup-form h1 {
+  text-align: center;
+  margin-bottom: 1.2rem;
+  color: #4a90e2;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+  letter-spacing: 0.5px;
+}
+
+.form-group input {
+  padding: 0.7rem 1rem;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  background: #f7faff;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+  border-color: #4a90e2;
+  outline: none;
+  background: #eaf6ff;
+}
+
+.signup-btn {
+  margin-top: 0.5rem;
+  background: linear-gradient(90deg, #4a90e2 0%, #3578e5 100%);
+  color: #fff;
+  padding: 0.85rem 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 4px 16px rgba(74, 144, 226, 0.08);
+}
+
+.signup-btn:hover {
+  background: linear-gradient(90deg, #3578e5 0%, #4a90e2 100%);
+}
+
+.login-link {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  color: #666;
+  font-size: 0.98rem;
+}
+
+.login-link a {
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 0.3rem;
+  transition: color 0.2s;
+}
+
+.login-link a:hover {
+  color: #3578e5;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .signup-form {
+    padding: 1.2rem 0.8rem;
+    max-width: 95vw;
+  }
+  .signup-form h1 {
+    font-size: 1.6rem;
+  }
+}
